@@ -13,49 +13,64 @@
 
 | Difficulty | Solved |
 |---|---:|
-| 🟢 Easy | 1 |
+| 🟢 Easy | 18 |
 | 🟡 Medium | 0 |
 | 🔴 Hard | 0 |
-| **Total** | **1** |
+| **Total** | **18** |
 
 ## 🧩 Topics Covered
 
-- Array
-- Hash Table
+- Arrays
+- Hash Table / Hash Set
+- Strings
+- Stack
+- Two Pointers
+- Binary Search
+- Linked List
+- Dynamic Programming
+- Sorting
 
-## 📁 Repository Structure
+## 📝 Problems Added
 
-```text
-leetcode---solutions/
-└── 0001-two-sum/
-    ├── 0001-two-sum.cpp
-    └── README.md
-```
-
-## 📝 Problems
-
-| # | Problem | Difficulty | Topics | Solution |
-|---:|---|---|---|---|
-| 1 | Two Sum | 🟢 Easy | Array, Hash Table | [C++](./0001-two-sum/0001-two-sum.cpp) |
+| # | Problem | Main Concept |
+|---:|---|---|
+| 1 | Two Sum | Hash Table |
+| 20 | Valid Parentheses | Stack |
+| 53 | Maximum Subarray | Kadane's Algorithm |
+| 70 | Climbing Stairs | Dynamic Programming |
+| 88 | Merge Sorted Array | Two Pointers |
+| 121 | Best Time to Buy and Sell Stock | Greedy |
+| 125 | Valid Palindrome | Two Pointers |
+| 141 | Linked List Cycle | Fast & Slow Pointers |
+| 169 | Majority Element | Boyer-Moore Voting |
+| 206 | Reverse Linked List | Linked List |
+| 217 | Contains Duplicate | Hash Set |
+| 242 | Valid Anagram | Frequency Counting |
+| 283 | Move Zeroes | Two Pointers |
+| 344 | Reverse String | Two Pointers |
+| 347 | Top K Frequent Elements | Hash Map + Sorting |
+| 349 | Intersection of Two Arrays | Hash Set |
+| 387 | First Unique Character | Frequency Counting |
+| 704 | Binary Search | Binary Search |
 
 ## 🗺️ DSA Roadmap
 
 - [x] Arrays
 - [x] Hash Table
-- [ ] Strings
-- [ ] Two Pointers
-- [ ] Sliding Window
-- [ ] Stack & Queue
-- [ ] Linked List
-- [ ] Binary Search
+- [x] Strings
+- [x] Two Pointers
+- [x] Stack
+- [x] Linked List
+- [x] Binary Search
+- [x] Dynamic Programming
 - [ ] Trees
 - [ ] Graphs
-- [ ] Dynamic Programming
+- [ ] Advanced Dynamic Programming
 
 ## ⚡ Practice Philosophy
 
 **Learn → Solve → Optimize → Repeat 🔥**
 
-More solutions will be added as I continue my LeetCode practice.
+These solutions are maintained as DSA practice/reference work while building stronger problem-solving skills.
 
-⭐ If you find this repository useful, consider giving it a star!
+⭐ More solutions will be added as the practice journey continues!
