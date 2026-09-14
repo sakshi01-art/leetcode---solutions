@@ -88,5 +88,10 @@ These solutions are maintained as DSA practice/reference work while building str
 ## Recursion
 |  |
 | ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
+
+## 🔥 Today's Practice Update
+
+- Updated the repository documentation and progress section.
+- Keeping the roadmap organized for upcoming DSA practice.
