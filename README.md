@@ -74,3 +74,19 @@
 These solutions are maintained as DSA practice/reference work while building stronger problem-solving skills.
 
 ⭐ More solutions will be added as the practice journey continues!
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+<!---LeetCode Topics End-->
