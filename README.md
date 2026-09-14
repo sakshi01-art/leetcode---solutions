@@ -53,6 +53,21 @@
 | 387 | First Unique Character | Frequency Counting |
 | 704 | Binary Search | Binary Search |
 
+## 🗂️ Repository Structure
+
+```text
+leetcode---solutions/
+├── Arrays/
+├── Strings/
+├── Linked-List/
+├── Stack/
+├── Binary-Search/
+├── Dynamic-Programming/
+└── README.md
+```
+
+Each solution is kept as a separate practice problem so the repository can grow into an organized DSA reference.
+
 ## 🗺️ DSA Roadmap
 
 - [x] Arrays
@@ -80,18 +95,20 @@ These solutions are maintained as DSA practice/reference work while building str
 ## Linked List
 |  |
 | ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
 ## Math
 |  |
 | ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0002-add-two-numbers) |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
 ## Recursion
 |  |
 | ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/master/master/0002-add-two-numbers) |
+| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
 
 ## 🔥 Today's Practice Update
 
-- Updated the repository documentation and progress section.
+- Updated repository documentation and navigation.
+- Organized the README for easier DSA tracking.
+- Fixed the Add Two Numbers topic link to point to the current `main` branch.
 - Keeping the roadmap organized for upcoming DSA practice.
