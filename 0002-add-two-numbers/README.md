@@ -1,35 +1,84 @@
-<h2><a href="https://leetcode.com/problems/add-two-numbers">2. Add Two Numbers</a></h2><h3>Medium</h3><hr><p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum&nbsp;as a linked list.</p>
+# 🔢 2. Add Two Numbers
 
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+> **LeetCode #2 · Medium · Linked List**
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg" style="width: 483px; height: 342px;" />
-<pre>
-<strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]
-<strong>Output:</strong> [7,0,8]
-<strong>Explanation:</strong> 342 + 465 = 807.
-</pre>
+Solve addition of two numbers represented by linked lists — without converting the numbers into integers.
 
-<p><strong class="example">Example 2:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> l1 = [0], l2 = [0]
-<strong>Output:</strong> [0]
-</pre>
+## 🧩 Problem
 
-<p><strong class="example">Example 3:</strong></p>
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each node contains one digit.
 
-<pre>
-<strong>Input:</strong> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-<strong>Output:</strong> [8,9,9,9,0,0,0,1]
-</pre>
+Add the two numbers and return the result as a linked list.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+### Example
 
-<ul>
-	<li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li>
-	<li><code>0 &lt;= Node.val &lt;= 9</code></li>
-	<li>It is guaranteed that the list represents a number that does not have leading zeros.</li>
-</ul>
+```text
+Input:  l1 = [2,4,3]
+        l2 = [5,6,4]
+
+Output: [7,0,8]
+
+Because: 342 + 465 = 807
+```
+
+---
+
+## 💡 Approach
+
+We add the digits from left to right in the linked lists while maintaining a **carry**, just like normal addition.
+
+1. Start with both linked-list heads.
+2. Add the current digits and the carry.
+3. Store `sum % 10` in a new node.
+4. Update carry using `sum / 10`.
+5. Move to the next nodes.
+6. Continue while either list has nodes or a carry remains.
+
+This approach works efficiently even when the numbers contain many digits.
+
+---
+
+## ⏱️ Complexity
+
+| Metric | Complexity |
+|---|---|
+| Time | **O(max(m, n))** |
+| Space | **O(max(m, n))** for the result list |
+
+`m` and `n` are the lengths of the two linked lists.
+
+---
+
+## 💻 Solution
+
+The C++ implementation is available here:
+
+👉 [View C++ Solution](./0002-add-two-numbers.cpp)
+
+---
+
+## 🧠 Concepts Practiced
+
+- Linked List
+- Traversal
+- Carry handling
+- Simulation of arithmetic
+- Pointer manipulation
+
+---
+
+## 🚀 DSA Progress
+
+This is **Problem #2** in my DSA / LeetCode practice journey.
+
+**Next:** Keep solving consistently and build stronger problem-solving skills. 🔥
+
+---
+
+<div align="center">
+
+⭐ **Learn • Code • Debug • Improve** ⭐
+
+</div>
