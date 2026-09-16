@@ -1,35 +1,63 @@
-<h2><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters</a></h2><h3>Medium</h3><hr><p>Given a string <code>s</code>, find the length of the <strong>longest</strong> <span data-keyword="substring-nonempty"><strong>substring</strong></span> without duplicate characters.</p>
+# 🔤 3. Longest Substring Without Repeating Characters
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+> **LeetCode #3 · Medium · String / Sliding Window**
 
-<pre>
-<strong>Input:</strong> s = &quot;abcabcbb&quot;
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3. Note that <code>&quot;bca&quot;</code> and <code>&quot;cab&quot;</code> are also correct answers.
-</pre>
+## 📌 Problem
 
-<p><strong class="example">Example 2:</strong></p>
+Given a string `s`, find the length of the **longest substring without repeating characters**.
 
-<pre>
-<strong>Input:</strong> s = &quot;bbbbb&quot;
-<strong>Output:</strong> 1
-<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.
-</pre>
+### Example
 
-<p><strong class="example">Example 3:</strong></p>
+```text
+Input:  s = "abcabcbb"
+Output: 3
+```
 
-<pre>
-<strong>Input:</strong> s = &quot;pwwkew&quot;
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.
-Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
-</pre>
+The longest substring is `"abc"`, so the answer is `3`.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+Other examples:
 
-<ul>
-	<li><code>0 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
-</ul>
+- `"bbbbb"` → `1`
+- `"pwwkew"` → `3`
+
+## 💡 Approach — Sliding Window
+
+This solution uses a **sliding window** with two pointers:
+
+1. `left` marks the beginning of the current valid substring.
+2. `right` moves through the string one character at a time.
+3. `last[c]` stores the most recent index where character `c` appeared.
+4. If the character was already inside the current window, move `left` just after its previous position.
+5. Update the maximum window length after each step.
+
+This avoids repeatedly checking every substring and gives an efficient linear-time solution.
+
+## ⏱️ Complexity
+
+| Complexity | Value |
+|---|---|
+| Time | `O(n)` |
+| Space | `O(1)` for the fixed 256-character table |
+
+## 💻 C++ Solution
+
+[View the C++ solution →](./0003-longest-substring-without-repeating-characters.cpp)
+
+## 🧠 Concepts Practiced
+
+- Strings
+- Sliding Window
+- Two Pointers
+- Arrays / Frequency Tracking
+- Hashing-style index tracking
+- Time & Space Complexity
+
+## 📈 DSA Progress
+
+Building DSA step by step through LeetCode problems — focusing on understanding the approach, writing clean C++, and improving problem-solving skills.
+
+<div align="center">
+
+**Learn • Code • Debug • Improve 🚀**
+
+</div>
