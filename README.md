@@ -1,13 +1,25 @@
 # 🚀 LeetCode Solutions
 
-> My journey of solving DSA problems and preparing for coding interviews.
+<div align="center">
 
-## 👩‍💻 About
+### 🧩 DSA Practice • C++ • Problem Solving
 
-- 🎓 BTech CSE Student
+**Learn → Solve → Optimize → Repeat 🔥**
+
+</div>
+
+---
+
+## 👩‍💻 About This Repository
+
+This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutions are organized by problem and topic so the repo can grow into a clean revision and interview-practice reference.
+
+- 🎓 BTech CSE student
 - 💻 Practicing C++ & DSA
-- 🧠 Focused on problem solving and algorithms
-- 🎯 Goal: build strong interview-ready DSA skills
+- 🧠 Strengthening algorithms and problem solving
+- 🎯 Preparing for coding interviews through consistent practice
+
+---
 
 ## 📊 Progress
 
@@ -18,19 +30,17 @@
 | 🔴 Hard | 0 |
 | **Total** | **18** |
 
-## 🧩 Topics Covered
+> Progress changes as new solutions are added.
 
-- Arrays
-- Hash Table / Hash Set
-- Strings
-- Stack
-- Two Pointers
-- Binary Search
-- Linked List
-- Dynamic Programming
-- Sorting
+---
 
-## 📝 Problems Added
+## 🧠 Topics
+
+`Arrays` `Hash Table` `Strings` `Stack` `Two Pointers` `Binary Search` `Linked List` `Dynamic Programming` `Sorting`
+
+---
+
+## 📝 Problems Tracked
 
 | # | Problem | Main Concept |
 |---:|---|---|
@@ -53,6 +63,8 @@
 | 387 | First Unique Character | Frequency Counting |
 | 704 | Binary Search | Binary Search |
 
+---
+
 ## 🗂️ Repository Structure
 
 ```text
@@ -66,7 +78,7 @@ leetcode---solutions/
 └── README.md
 ```
 
-Each solution is kept as a separate practice problem so the repository can grow into an organized DSA reference.
+---
 
 ## 🗺️ DSA Roadmap
 
@@ -82,45 +94,21 @@ Each solution is kept as a separate practice problem so the repository can grow 
 - [ ] Graphs
 - [ ] Advanced Dynamic Programming
 
-## ⚡ Practice Philosophy
+---
 
-**Learn → Solve → Optimize → Repeat 🔥**
+## 🔥 Latest Practice Update
 
-These solutions are maintained as DSA practice/reference work while building stronger problem-solving skills.
+- ✨ Refreshed repository documentation and navigation.
+- 🧩 Kept the problem list easy to scan for revision.
+- 📚 Added a clearer DSA roadmap for upcoming practice.
+- 🚀 Continuing to add C++ solutions as the learning journey progresses.
 
-⭐ More solutions will be added as the practice journey continues!
+---
 
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
-## Math
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
-## Recursion
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
-## Hash Table
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
-## String
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
-## Sliding Window
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
-<!---LeetCode Topics End-->
+<div align="center">
 
-## 🔥 Today's Practice Update
+**🌱 Consistency > Speed**
 
-- Updated repository documentation and navigation.
-- Organized the README for easier DSA tracking.
-- Fixed the Add Two Numbers topic link to point to the current `main` branch.
-- Keeping the roadmap organized for upcoming DSA practice.
+⭐ Keep learning. Keep solving. Keep improving.
+
+</div>
