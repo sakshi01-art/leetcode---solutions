@@ -104,6 +104,18 @@ These solutions are maintained as DSA practice/reference work while building str
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0002-add-two-numbers) |
+## Hash Table
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+## String
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
 
 ## 🔥 Today's Practice Update
