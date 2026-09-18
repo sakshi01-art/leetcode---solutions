@@ -127,4 +127,8 @@ leetcode---solutions/
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0004-median-of-two-sorted-arrays) |
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0009-palindrome-number) |
 <!---LeetCode Topics End-->
