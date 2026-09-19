@@ -96,12 +96,19 @@ leetcode---solutions/
 
 ---
 
-## 🔥 Latest Practice Update
+## 🔥 Latest Practice Update — 19 September 2026
 
 - ✨ Refreshed repository documentation and navigation.
 - 🧩 Kept the problem list easy to scan for revision.
 - 📚 Added a clearer DSA roadmap for upcoming practice.
-- 🚀 Continuing to add C++ solutions as the learning journey progresses.
+- 💻 Continuing C++ problem-solving practice with focus on clean, readable solutions.
+- 🚀 Building consistency through small, regular improvements.
+
+### 📌 Current Practice Focus
+
+```text
+Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
+```
 
 ---
 
