@@ -21,6 +21,16 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 
 ---
 
+## 🎨 DSA Journey Visual
+
+<p align="center">
+  <img src="./assets/project-draw.svg" alt="LeetCode DSA practice workflow" width="100%" />
+</p>
+
+> **Visual:** Read → plan → code → test → optimize.
+
+---
+
 ## 📊 Progress
 
 | Difficulty | Solved |
