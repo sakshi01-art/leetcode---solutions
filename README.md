@@ -149,3 +149,13 @@ Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search 
 | ------- |
 | [0009-palindrome-number](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0009-palindrome-number) |
 <!---LeetCode Topics End-->
+
+---
+
+## 🔥 Latest Practice Update — 20 September 2026
+
+- Refreshed the DSA repository presentation and navigation.
+- Kept the solution list easy to scan for revision.
+- Continuing C++ problem-solving practice with a focus on clean, readable solutions.
+
+**Practice path:** Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
