@@ -167,3 +167,8 @@ Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search 
 - Reinforced the practice cycle: understand → plan → code → test → analyze → revise.
 - Continuing C++ practice with arrays, hashing, linked lists, stacks and binary search.
 
+## 🚀 Practice Update — 22 September 2026
+
+- Strengthened the revision workflow: **understand → plan → code → test → complexity → revise**.
+- Kept the repository organized for interview-focused C++ practice.
+- Next practice areas: Trees, Graphs, and deeper problem-solving patterns.
