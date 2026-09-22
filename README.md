@@ -159,3 +159,11 @@ Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search 
 - Continuing C++ problem-solving practice with a focus on clean, readable solutions.
 
 **Practice path:** Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
+
+
+## 🔥 Latest Practice Update — 22 September 2026
+
+- Added a reusable DSA problem-solving workflow under `docs/`.
+- Reinforced the practice cycle: understand → plan → code → test → analyze → revise.
+- Continuing C++ practice with arrays, hashing, linked lists, stacks and binary search.
+
