@@ -172,3 +172,11 @@ Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search 
 - Strengthened the revision workflow: **understand → plan → code → test → complexity → revise**.
 - Kept the repository organized for interview-focused C++ practice.
 - Next practice areas: Trees, Graphs, and deeper problem-solving patterns.
+
+---
+
+## 🚀 Practice Update — 24 September 2026
+
+- Refined the C++ DSA practice roadmap for consistent problem solving.
+- Added clearer checkpoints for edge cases, complexity analysis, and revision after each solution.
+- Continued the progression from foundational patterns toward Trees and Graphs.
