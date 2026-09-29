@@ -1,57 +1,111 @@
-<h2><a href="https://leetcode.com/problems/roman-to-integer">13. Roman to Integer</a></h2><h3>Easy</h3><hr><p>Roman numerals are represented by seven different symbols:&nbsp;<code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
+# 🏛️ Roman to Integer — LeetCode #13
 
-<pre>
-<strong>Symbol</strong>       <strong>Value</strong>
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000</pre>
+**Difficulty:** Easy  
+**Language:** C++  
+**Topic:** Hash Table • String • Math
 
-<p>For example,&nbsp;<code>2</code> is written as <code>II</code>&nbsp;in Roman numeral, just two ones added together. <code>12</code> is written as&nbsp;<code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>
+---
 
-<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
+## 📌 Problem
 
-<ul>
-	<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9.&nbsp;</li>
-	<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90.&nbsp;</li>
-	<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
-</ul>
+Convert a Roman numeral string into its integer value.
 
-<p>Given a roman numeral, convert it to an integer.</p>
+Roman numerals use these symbols:
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+| Symbol | Value |
+|---|---:|
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
 
-<pre>
-<strong>Input:</strong> s = &quot;III&quot;
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> III = 3.
-</pre>
+The important rule is that when a smaller value appears before a larger value, the smaller value is subtracted.
 
-<p><strong class="example">Example 2:</strong></p>
+Examples:
 
-<pre>
-<strong>Input:</strong> s = &quot;LVIII&quot;
-<strong>Output:</strong> 58
-<strong>Explanation:</strong> L = 50, V= 5, III = 3.
-</pre>
+- `III` → `3`
+- `LVIII` → `58`
+- `MCMXCIV` → `1994`
 
-<p><strong class="example">Example 3:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> s = &quot;MCMXCIV&quot;
-<strong>Output:</strong> 1994
-<strong>Explanation:</strong> M = 1000, CM = 900, XC = 90 and IV = 4.
-</pre>
+## 💡 Approach
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+1. Store every Roman symbol and its value in an `unordered_map`.
+2. Traverse the string from left to right.
+3. If the current symbol is smaller than the next symbol, subtract it.
+4. Otherwise, add it.
+5. Return the final sum.
 
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 15</code></li>
-	<li><code>s</code> contains only&nbsp;the characters <code>(&#39;I&#39;, &#39;V&#39;, &#39;X&#39;, &#39;L&#39;, &#39;C&#39;, &#39;D&#39;, &#39;M&#39;)</code>.</li>
-	<li>It is <strong>guaranteed</strong>&nbsp;that <code>s</code> is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
-</ul>
+### Example
+
+For `MCMXCIV`:
+
+```text
+M  = +1000
+C  = -100
+M  = +1000
+X  = -10
+C  = +100
+I  = -1
+V  = +5
+
+Answer = 1994
+```
+
+---
+
+## 💻 C++ Solution
+
+```cpp
+class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char, int> mp = {
+            {'I', 1},
+            {'V', 5},
+            {'X', 10},
+            {'L', 50},
+            {'C', 100},
+            {'D', 500},
+            {'M', 1000}
+        };
+
+        int ans = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (i + 1 < s.length() && mp[s[i]] < mp[s[i + 1]]) {
+                ans -= mp[s[i]];
+            } else {
+                ans += mp[s[i]];
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
+---
+
+## ⏱️ Complexity
+
+- **Time:** O(n)
+- **Space:** O(1) — the map contains only 7 Roman symbols.
+
+---
+
+## 🔗 LeetCode
+
+[Roman to Integer — LeetCode #13](https://leetcode.com/problems/roman-to-integer/)
+
+---
+
+### 🌱 DSA Practice
+
+Part of my **LeetCode & DSA learning journey** using C++.
+
+**Understand → Code → Test → Optimize → Repeat 🚀**
