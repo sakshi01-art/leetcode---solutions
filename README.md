@@ -35,10 +35,10 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 
 | Difficulty | Solved |
 |---|---:|
-| 🟢 Easy | 18 |
+| 🟢 Easy | 19 |
 | 🟡 Medium | 0 |
 | 🔴 Hard | 0 |
-| **Total** | **18** |
+| **Total** | **19** |
 
 > Progress changes as new solutions are added.
 
@@ -46,7 +46,7 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 
 ## 🧠 Topics
 
-`Arrays` `Hash Table` `Strings` `Stack` `Two Pointers` `Binary Search` `Linked List` `Dynamic Programming` `Sorting`
+`Arrays` `Hash Table` `Strings` `Stack` `Two Pointers` `Binary Search` `Linked List` `Dynamic Programming` `Sorting` `Math`
 
 ---
 
@@ -55,6 +55,8 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 | # | Problem | Main Concept |
 |---:|---|---|
 | 1 | Two Sum | Hash Table |
+| 9 | Palindrome Number | Math |
+| 13 | Roman to Integer | Hash Table + String |
 | 20 | Valid Parentheses | Stack |
 | 53 | Maximum Subarray | Kadane's Algorithm |
 | 70 | Climbing Stairs | Dynamic Programming |
@@ -85,6 +87,7 @@ leetcode---solutions/
 ├── Stack/
 ├── Binary-Search/
 ├── Dynamic-Programming/
+├── 0013-roman-to-integer/
 └── README.md
 ```
 
@@ -106,18 +109,18 @@ leetcode---solutions/
 
 ---
 
-## 🔥 Latest Practice Update — 19 September 2026
+## 🔥 Latest Practice Update — 29 September 2026
 
-- ✨ Refreshed repository documentation and navigation.
-- 🧩 Kept the problem list easy to scan for revision.
-- 📚 Added a clearer DSA roadmap for upcoming practice.
-- 💻 Continuing C++ problem-solving practice with focus on clean, readable solutions.
-- 🚀 Building consistency through small, regular improvements.
+- 🏛️ Added and documented **Roman to Integer — LeetCode #13**.
+- 📚 Added a complete problem explanation, approach, example walkthrough, C++ solution, and complexity analysis.
+- 📊 Updated repository progress from **18 → 19 Easy problems**.
+- 🧩 Added Roman to Integer to the main tracked-problems list.
+- 🚀 Continuing consistent C++ and DSA practice.
 
 ### 📌 Current Practice Focus
 
 ```text
-Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
+Arrays → Hashing → Strings → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
 ```
 
 ---
@@ -161,46 +164,10 @@ Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search 
 
 ---
 
-## 🔥 Latest Practice Update — 20 September 2026
+## 📌 Next Practice Targets
 
-- Refreshed the DSA repository presentation and navigation.
-- Kept the solution list easy to scan for revision.
-- Continuing C++ problem-solving practice with a focus on clean, readable solutions.
+```text
+Trees → Graphs → Dynamic Programming → Advanced DSA
+```
 
-**Practice path:** Arrays → Hashing → Two Pointers → Stack → Linked List → Binary Search → Trees → Graphs
-
-
-## 🔥 Latest Practice Update — 22 September 2026
-
-- Added a reusable DSA problem-solving workflow under `docs/`.
-- Reinforced the practice cycle: understand → plan → code → test → analyze → revise.
-- Continuing C++ practice with arrays, hashing, linked lists, stacks and binary search.
-
-## 🚀 Practice Update — 22 September 2026
-
-- Strengthened the revision workflow: **understand → plan → code → test → complexity → revise**.
-- Kept the repository organized for interview-focused C++ practice.
-- Next practice areas: Trees, Graphs, and deeper problem-solving patterns.
-
----
-
-## 🚀 Practice Update — 24 September 2026
-
-- Refined the C++ DSA practice roadmap for consistent problem solving.
-- Added clearer checkpoints for edge cases, complexity analysis, and revision after each solution.
-- Continued the progression from foundational patterns toward Trees and Graphs.
-
----
-
-## ✨ Development Update — 26 September 2026
-
-- Refreshed the project documentation for the latest development stage.
-- Kept the roadmap focused on practical implementation, testing, and continuous improvement.
-- Updated the project progress section so the repository stays current and easy to review.
-
-
-## ✨ Development Update — 27 September 2026
-
-- Added a fresh progress checkpoint for DSA practice notes.
-- Clarified the next implementation/practice focus and kept unfinished work visible.
-- Kept documentation aligned with the current repository stage so future changes can be tracked clearly.
+**Practice cycle:** Understand → Plan → Code → Test → Analyze Complexity → Revise 🔁
