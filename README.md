@@ -139,6 +139,7 @@ Arrays → Hashing → Strings → Two Pointers → Stack → Linked List → Bi
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0004-median-of-two-sorted-arrays) |
+| [0014-longest-common-prefix](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0014-longest-common-prefix) |
 ## Binary Search
 |  |
 | ------- |
@@ -160,6 +161,11 @@ Arrays → Hashing → Strings → Two Pointers → Stack → Linked List → Bi
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0014-longest-common-prefix) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
 
 ---
