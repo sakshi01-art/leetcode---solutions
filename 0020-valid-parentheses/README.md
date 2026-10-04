@@ -1,26 +1,58 @@
-# 20. Valid Parentheses
+<h2><a href="https://leetcode.com/problems/valid-parentheses">20. Valid Parentheses</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
 
-## Approach
+<p>An input string is valid if:</p>
 
-Use a stack because the most recently opened bracket must be the first bracket matched.
+<ol>
+	<li>Open brackets must be closed by the same type of brackets.</li>
+	<li>Open brackets must be closed in the correct order.</li>
+	<li>Every close bracket has a corresponding open bracket of the same type.</li>
+</ol>
 
-1. Push every opening bracket.
-2. For a closing bracket, return false if the stack is empty.
-3. Compare the closing bracket with the stack top.
-4. Pop the matching opening bracket.
-5. At the end, the stack must be empty.
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-## Complexity
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;()&quot;</span></p>
 
-- Time: **O(n)**
-- Space: **O(n)** in the worst case
+<p><strong>Output:</strong> <span class="example-io">true</span></p>
+</div>
 
-## Example
+<p><strong class="example">Example 2:</strong></p>
 
-Input: `()[]{}`
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;()[]{}&quot;</span></p>
 
-The brackets are matched in LIFO order, so the result is `true`.
+<p><strong>Output:</strong> <span class="example-io">true</span></p>
+</div>
 
-## Learning Point
+<p><strong class="example">Example 3:</strong></p>
 
-This problem is a good introduction to the **stack** data structure and the LIFO (Last In, First Out) principle.
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;(]&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">false</span></p>
+</div>
+
+<p><strong class="example">Example 4:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;([])&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">true</span></p>
+</div>
+
+<p><strong class="example">Example 5:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;([)]&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">false</span></p>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
+</ul>
