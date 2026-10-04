@@ -1,58 +1,115 @@
-<h2><a href="https://leetcode.com/problems/valid-parentheses">20. Valid Parentheses</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
+# 🔗 Valid Parentheses — LeetCode #20
 
-<p>An input string is valid if:</p>
+**Difficulty:** Easy  
+**Language:** C++  
+**Topic:** Stack • String
 
-<ol>
-	<li>Open brackets must be closed by the same type of brackets.</li>
-	<li>Open brackets must be closed in the correct order.</li>
-	<li>Every close bracket has a corresponding open bracket of the same type.</li>
-</ol>
+---
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## 📌 Problem
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()&quot;</span></p>
+Given a string containing only `()`, `{}`, and `[]`, determine whether the brackets are **valid**.
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+A string is valid when:
 
-<p><strong class="example">Example 2:</strong></p>
+1. Every opening bracket has the same type of closing bracket.
+2. Brackets are closed in the correct order.
+3. Every closing bracket has a corresponding opening bracket.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()[]{}&quot;</span></p>
+### Examples
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+- `"()"` → `true`
+- `"()[]{}"` → `true`
+- `"(]"` → `false`
+- `"([])"` → `true`
+- `"([)]"` → `false`
 
-<p><strong class="example">Example 3:</strong></p>
+---
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;(]&quot;</span></p>
+## 💡 Approach
 
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
+The natural data structure for this problem is a **Stack**.
 
-<p><strong class="example">Example 4:</strong></p>
+1. Traverse the string from left to right.
+2. When an opening bracket is found, push it onto the stack.
+3. When a closing bracket is found:
+   - Check whether the stack is empty.
+   - Check whether the top opening bracket matches it.
+   - If it does not match, return `false`.
+4. Pop the matching opening bracket.
+5. After processing the complete string, the stack must be empty.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([])&quot;</span></p>
+### Example Walkthrough
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+For:
 
-<p><strong class="example">Example 5:</strong></p>
+```text
+"([])"
+```
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([)]&quot;</span></p>
+Stack operations:
 
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
+```text
+(  → push
+[  → push
+]  → matches [ → pop
+)  → matches ( → pop
+```
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+Stack is empty → **true** ✅
 
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
-</ul>
+---
+
+## 💻 C++ Solution
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+
+        for (char c : s) {
+            if (c == '(' || c == '{' || c == '[') {
+                st.push(c);
+            } 
+            else {
+                if (st.empty())
+                    return false;
+
+                char top = st.top();
+
+                if ((c == ')' && top != '(') ||
+                    (c == '}' && top != '{') ||
+                    (c == ']' && top != '[')) {
+                    return false;
+                }
+
+                st.pop();
+            }
+        }
+
+        return st.empty();
+    }
+};
+```
+
+---
+
+## ⏱️ Complexity
+
+- **Time:** O(n)
+- **Space:** O(n) in the worst case.
+
+---
+
+## 🔗 LeetCode
+
+[Valid Parentheses — LeetCode #20](https://leetcode.com/problems/valid-parentheses/)
+
+---
+
+### 🌱 DSA Practice
+
+Part of my **LeetCode & DSA learning journey** using C++.
+
+**Understand → Code → Test → Optimize → Repeat 🚀**
