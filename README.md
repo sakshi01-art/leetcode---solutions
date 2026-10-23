@@ -36,9 +36,9 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 | Difficulty | Solved |
 |---|---:|
 | 🟢 Easy | 19 |
-| 🟡 Medium | 0 |
+| 🟡 Medium | 1 |
 | 🔴 Hard | 0 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 > Progress changes as new solutions are added.
 
@@ -55,6 +55,7 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 | # | Problem | Main Concept |
 |---:|---|---|
 | 1 | Two Sum | Hash Table |
+| 7 | [Reverse Integer](#leetcode-7-reverse-integer) | Math + Overflow Handling |
 | 9 | Palindrome Number | Math |
 | 13 | Roman to Integer | Hash Table + String |
 | 20 | Valid Parentheses | Stack |
@@ -74,6 +75,74 @@ This repository tracks my ongoing **LeetCode and DSA learning journey**. Solutio
 | 349 | Intersection of Two Arrays | Hash Set |
 | 387 | First Unique Character | Frequency Counting |
 | 704 | Binary Search | Binary Search |
+
+
+---
+
+## 🧩 Featured Solution
+
+### LeetCode #7 — Reverse Integer
+
+**Difficulty:** Medium  
+**Topic:** Math, Integer Manipulation, Overflow Handling
+
+**Problem:** Reverse the digits of a signed 32-bit integer. If the reversed value falls outside the signed 32-bit range, return `0`.
+
+#### C++ Solution
+
+```cpp
+#include <climits>
+
+class Solution {
+public:
+    int reverse(int x) {
+        int rev = 0;
+
+        while (x != 0) {
+            int digit = x % 10;
+            x /= 10;
+
+            // Check overflow before multiplying rev by 10.
+            if (rev > INT_MAX / 10 ||
+                (rev == INT_MAX / 10 && digit > 7)) {
+                return 0;
+            }
+
+            if (rev < INT_MIN / 10 ||
+                (rev == INT_MIN / 10 && digit < -8)) {
+                return 0;
+            }
+
+            rev = rev * 10 + digit;
+        }
+
+        return rev;
+    }
+};
+```
+
+#### Examples
+
+| Input | Output |
+|---:|---:|
+| `123` | `321` |
+| `-123` | `-321` |
+| `120` | `21` |
+| `1534236469` | `0` (overflow) |
+
+#### Approach
+
+1. Extract the last digit using `x % 10`.
+2. Remove that digit using `x /= 10`.
+3. Append the digit to the reversed number with `rev = rev * 10 + digit`.
+4. Check the 32-bit integer boundaries **before** updating `rev`; return `0` if overflow would occur.
+
+**Time Complexity:** (O(\log_{10}|x|)), because each loop processes one digit.  
+**Space Complexity:** (O(1)), because only a fixed number of variables are used.
+
+**Folder:** [0007-reverse-integer](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0007-reverse-integer)  
+**LeetCode:** [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
 
 ---
 
@@ -109,12 +178,11 @@ leetcode---solutions/
 
 ---
 
-## 🔥 Latest Practice Update — 29 September 2026
+## 🔥 Latest Practice Update — 23 October 2026
 
-- 🏛️ Added and documented **Roman to Integer — LeetCode #13**.
-- 📚 Added a complete problem explanation, approach, example walkthrough, C++ solution, and complexity analysis.
-- 📊 Updated repository progress from **18 → 19 Easy problems**.
-- 🧩 Added Roman to Integer to the main tracked-problems list.
+- 🧩 Added documentation for **Reverse Integer — LeetCode #7** with a C++ solution.
+- 🛡️ Included 32-bit overflow checks and complexity analysis.
+- 📊 Updated the tracked problem count to **20 solutions** (19 Easy, 1 Medium).
 - 🚀 Continuing consistent C++ and DSA practice.
 
 ### 📌 Current Practice Focus
