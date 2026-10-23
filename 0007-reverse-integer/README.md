@@ -1,32 +1,47 @@
-<h2><a href="https://leetcode.com/problems/reverse-integer">7. Reverse Integer</a></h2><h3>Medium</h3><hr><p>Given a signed 32-bit integer <code>x</code>, return <code>x</code><em> with its digits reversed</em>. If reversing <code>x</code> causes the value to go outside the signed 32-bit integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then return <code>0</code>.</p>
+# LeetCode 7 — Reverse Integer
 
-<p><strong>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).</strong></p>
+<p align="center">
+  <b>LeetCode • C++ • Math • Overflow Handling</b><br/>
+  A clean, interview-ready solution with 32-bit overflow checks.
+</p>
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> x = 123
-<strong>Output:</strong> 321
-</pre>
+## Problem Statement
 
-<p><strong class="example">Example 2:</strong></p>
+Given a signed 32-bit integer `x`, reverse its digits. If reversing the integer causes the value to go outside the signed 32-bit range `[-2³¹, 2³¹ - 1]`, return `0`.
 
-<pre>
-<strong>Input:</strong> x = -123
-<strong>Output:</strong> -321
-</pre>
+## Examples
 
-<p><strong class="example">Example 3:</strong></p>
+| Input | Output | Explanation |
+|---|---:|---|
+| `123` | `321` | Digits are reversed |
+| `-123` | `-321` | Negative sign is preserved |
+| `120` | `21` | Leading zero is dropped |
+| `1534236469` | `0` | Reversed number overflows |
 
-<pre>
-<strong>Input:</strong> x = 120
-<strong>Output:</strong> 21
-</pre>
+## Approach
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+1. Get the last digit with `x % 10`.
+2. Remove the last digit with `x /= 10`.
+3. Append the digit to the result: `rev = rev * 10 + digit`.
+4. **Before updating the result**, compare it against `INT_MAX / 10` and `INT_MIN / 10`. Return `0` if the next operation would overflow.
 
-<ul>
-	<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
-</ul>
+## C++ Solution
+
+See **[solution.cpp](./solution.cpp)** for the complete implementation.
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(log₁₀ |x|)` — each iteration processes one digit.
+- **Space Complexity:** `O(1)` — only a constant number of variables are used.
+
+## Key Learning
+
+Checking integer boundaries *before* multiplying by 10 prevents overflow without requiring a 64-bit integer.
+
+## Links
+
+- [Open problem on LeetCode](https://leetcode.com/problems/reverse-integer/)
+- [Browse all solutions](https://github.com/sakshi01-art/leetcode---solutions)
+- [View this solution folder](https://github.com/sakshi01-art/leetcode---solutions/tree/main/0007-reverse-integer)
