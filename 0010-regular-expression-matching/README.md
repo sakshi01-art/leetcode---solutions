@@ -1,44 +1,57 @@
-<h2><a href="https://leetcode.com/problems/regular-expression-matching">10. Regular Expression Matching</a></h2><h3>Hard</h3><hr><p>Given an input string <code>s</code>&nbsp;and a pattern <code>p</code>, implement regular expression matching with support for <code>&#39;.&#39;</code> and <code>&#39;*&#39;</code> where:</p>
+# 0010. Regular Expression Matching
 
-<ul>
-	<li><code>&#39;.&#39;</code> Matches any single character.​​​​</li>
-	<li><code>&#39;*&#39;</code> Matches zero or more of the preceding element.</li>
-</ul>
+[![LeetCode](https://img.shields.io/badge/LeetCode-10-orange?logo=leetcode)](https://leetcode.com/problems/regular-expression-matching/)
+![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red)
+![Language](https://img.shields.io/badge/Language-C%2B%2B17-blue)
 
-<p>Return a boolean indicating whether the matching covers the entire input string (not partial).</p>
+## Problem Statement
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+Given an input string `s` and a pattern `p`, implement regular expression matching with support for:
 
-<pre>
-<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;
-<strong>Output:</strong> false
-<strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.
-</pre>
+- `.` — matches any single character.
+- `*` — matches zero or more occurrences of the preceding element.
 
-<p><strong class="example">Example 2:</strong></p>
+The match must cover the **entire** input string, not just a substring.
 
-<pre>
-<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a*&quot;
-<strong>Output:</strong> true
-<strong>Explanation:</strong> &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes &quot;aa&quot;.
-</pre>
+## Examples
 
-<p><strong class="example">Example 3:</strong></p>
+| Input | Output | Explanation |
+|---|---|---|
+| `s = "aa", p = "a"` | `false` | The pattern does not cover both characters. |
+| `s = "aa", p = "a*"` | `true` | `a*` can match two occurrences of `a`. |
+| `s = "ab", p = ".*"` | `true` | `.*` can match any sequence of characters. |
 
-<pre>
-<strong>Input:</strong> s = &quot;ab&quot;, p = &quot;.*&quot;
-<strong>Output:</strong> true
-<strong>Explanation:</strong> &quot;.*&quot; means &quot;zero or more (*) of any character (.)&quot;.
-</pre>
+## Approach: Dynamic Programming
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+Use a 2D DP table where `dp[i][j]` is true when the first `i` characters of `s` match the first `j` characters of `p`.
 
-<ul>
-	<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>
-	<li><code>1 &lt;= p.length&nbsp;&lt;= 20</code></li>
-	<li><code>s</code> contains only lowercase English letters.</li>
-	<li><code>p</code> contains only lowercase English letters, <code>&#39;.&#39;</code>, and&nbsp;<code>&#39;*&#39;</code>.</li>
-	<li>It is guaranteed for each appearance of the character <code>&#39;*&#39;</code>, there will be a previous valid character to match.</li>
-</ul>
+### State transitions
+
+1. If the current pattern character is equal to the current string character, or it is `.`, use the diagonal state: `dp[i][j] = dp[i-1][j-1]`.
+2. If the current pattern character is `*`:
+   - **Zero occurrences:** ignore the preceding pattern element and use `dp[i][j-2]`.
+   - **One or more occurrences:** if the preceding pattern element matches the current string character, use `dp[i-1][j]`.
+
+Initialize `dp[0][0] = true`. Also initialize empty-string matches for patterns such as `a*` and `a*b*`.
+
+## C++ Solution
+
+See [`solution.cpp`](./solution.cpp).
+
+## Complexity Analysis
+
+Let `n` be the length of `s` and `m` be the length of `p`.
+
+- **Time Complexity:** `O(n × m)` — each DP cell is calculated once.
+- **Space Complexity:** `O(n × m)` — the DP table stores `(n + 1) × (m + 1)` states.
+
+## Key Concepts
+
+- Dynamic Programming
+- String Matching
+- Pattern Matching
+- 2D DP
+
+## LeetCode
+
+[Problem 10 — Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
