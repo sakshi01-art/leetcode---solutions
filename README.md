@@ -232,6 +232,7 @@ Arrays → Hashing → Strings → Two Pointers → Stack → Linked List → Bi
 | [0005-longest-palindromic-substring](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0008-string-to-integer-atoi) |
+| [0010-regular-expression-matching](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0010-regular-expression-matching) |
 | [0013-roman-to-integer](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0020-valid-parentheses) |
@@ -255,10 +256,15 @@ Arrays → Hashing → Strings → Two Pointers → Stack → Linked List → Bi
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0005-longest-palindromic-substring) |
+| [0010-regular-expression-matching](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0010-regular-expression-matching) |
 ## Manacher
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0005-longest-palindromic-substring) |
+## Recursion
+|  |
+| ------- |
+| [0010-regular-expression-matching](https://github.com/sakshi01-art/leetcode---solutions/tree/master/0010-regular-expression-matching) |
 <!---LeetCode Topics End-->
 
 ---
